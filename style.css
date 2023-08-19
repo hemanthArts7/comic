@@ -1,0 +1,43 @@
+header{
+  text-align: center;
+  background-color: rgba(22, 22, 22, 0.946);
+  color: white; 
+  padding-top: 15px;
+  padding-bottom: 15px;
+  }
+ header h1{
+    font-size: 50px;
+  }
+ .navbar{
+    background-color: rgba(16, 16, 16, 0.954);
+    padding-top: 7px;
+    padding-bottom: 7px;
+   }
+ .navbar ul li{
+    display: inline-block;
+    justify-content: space-between;
+    margin: 15px;
+    margin-right: 70px;
+      }
+ .navbar ul li a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: large;
+ }
+ h2{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding-left: 10px;
+}
+.images{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    padding-top: 100px;
+}
+#pic1{
+    
+   padding-left: 100px;
+   width: auto;
+   height: auto;
+}
+   
