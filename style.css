@@ -1,43 +1,112 @@
-header{
+header {
   text-align: center;
   background-color: rgba(22, 22, 22, 0.946);
-  color: white; 
+  color: white;
   padding-top: 15px;
   padding-bottom: 15px;
+}
+header h1 {
+  font-size: 50px;
+}
+.navbar {
+  background-color: rgba(16, 16, 16, 0.954);
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+.navbar ul li {
+  display: inline-block;
+  justify-content: space-between;
+  margin: 15px;
+  margin-right: 70px;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: aliceblue;
+  font-size: large;
+  padding-left: 75px;
+}
+a :hover {
+  color: aqua;
+  background: yellow;
+}
+h2 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding-left: 20px;
+  font-size: xx-large;
+}
+.images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  padding-top: 85px;
+}
+#pic1 {
+  padding-left: 300px;
+  width: 500px;
+  height: 500px;
+}
+#pic2 {
+  width: 500px;
+  height: 500px;
+}
+/* Shine */
+.images #pic1 {
+  position: relative;
+}
+.images #pic1::before {
+  position: absolute;
+  top: 0;
+  left: -75%;
+  z-index: 2;
+  display: block;
+  content: "";
+  width: 50%;
+  height: 100%;
+  background: -webkit-linear-gradient(
+    left,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.3) 100%
+  );
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.3) 100%
+  );
+  -webkit-transform: skewX(-25deg);
+  transform: skewX(-25deg);
+}
+.images #pic1:hover::before {
+  -webkit-animation: shine 0.75s;
+  animation: shine 0.75s;
+}
+@-webkit-keyframes shine {
+  100% {
+    left: 125%;
   }
- header h1{
-    font-size: 50px;
+}
+@keyframes shine {
+  100% {
+    left: 125%;
   }
- .navbar{
-    background-color: rgba(16, 16, 16, 0.954);
-    padding-top: 7px;
-    padding-bottom: 7px;
-   }
- .navbar ul li{
-    display: inline-block;
-    justify-content: space-between;
-    margin: 15px;
-    margin-right: 70px;
-      }
- .navbar ul li a{
-    text-decoration: none;
-    color: aliceblue;
-    font-size: large;
- }
- h2{
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  padding-left: 10px;
 }
-.images{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
-    padding-top: 100px;
+.sitelogo {
+  padding-top: 5cm;
 }
-#pic1{
-    
-   padding-left: 100px;
-   width: auto;
-   height: auto;
+.to_buy,
+.contact,
+.social_links {
+  text-align: center;
+  padding-right: 5cm;
+  text-decoration: none;
 }
-   
+.to_buy {
+  color: rgb(243, 243, 243);
+  background-color: rgba(25, 146, 84, 0.955);
+}
+.to_buy :hover {
+  background-color: azure;
+  background: azure;
+}
+.contact {
+  font-size: larger;
+}
