@@ -90,14 +90,14 @@ h2 {
   }
 }
 .sitelogo {
-  padding-top: 5cm;
+  padding-top: 8cm;
 }
 .to_buy,
-.contact,
-.social_links {
+.contact{
   text-align: center;
   padding-right: 5cm;
   text-decoration: none;
+ 
 }
 .to_buy {
   color: rgb(243, 243, 243);
@@ -109,4 +109,27 @@ h2 {
 }
 .contact {
   font-size: larger;
+}
+.social_links a{
+
+  padding-right: 5cm;
+  text-decoration: none;
+  font-size: 20px;
+  text-align: center;
+}
+#aa,#ab{
+  padding-top: 1cm;
+  padding-left: 12cm;
+  display: flex;
+  flex-direction: column;
+ 
+}
+#ab{
+  padding-bottom: 5cm;
+}
+.back{
+  background-color: gray;
+}
+i {
+  text-shadow: 2px 4px 6px orange;
 }
