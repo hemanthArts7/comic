@@ -1,135 +1,77 @@
-header {
-  text-align: center;
-  background-color: rgba(22, 22, 22, 0.946);
-  color: white;
-  padding-top: 15px;
-  padding-bottom: 15px;
+header{
+    text-align: center;
+    background-color:rgb(68, 77, 80);
+    padding: 80px;
+    font-size: 30px;
+    color: white;
 }
-header h1 {
-  font-size: 50px;
+body{
+    margin: 0px;
 }
-.navbar {
-  background-color: rgba(16, 16, 16, 0.954);
-  padding-top: 7px;
-  padding-bottom: 7px;
+ul {
+        text-align: left;
+        background-color:rgba(62, 70, 72, 0.887);
+        margin: 0px;
+        margin-top: 1px;
 }
-.navbar ul li {
-  display: inline-block;
-  justify-content: space-between;
-  margin: 15px;
-  margin-right: 70px;
+    
+ul li {
+        font-size: 15px;
+        margin: 0 10px;
+        line-height: 60px;
+        display: inline-block;
+        text-decoration: none;
+        font-size: 20px;
 }
-.navbar ul li a {
-  text-decoration: none;
-  color: aliceblue;
-  font-size: large;
-  padding-left: 75px;
+ul li a{
+    color: aliceblue;
+    text-decoration: none;
+    padding-left: 5cm;
 }
-a :hover {
-  color: aqua;
-  background: yellow;
+ul li a :hover{
+    color: aqua;
 }
-h2 {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  padding-left: 20px;
-  font-size: xx-large;
+.sub{
+    padding-left: 7px;
+    margin-bottom: 5cm;
 }
-.images {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 10px;
-  padding-top: 85px;
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 20%;
+  padding: 35px;
+  margin-left: 2cm;
 }
-#pic1 {
-  padding-left: 300px;
-  width: 500px;
-  height: 500px;
-}
-#pic2 {
-  width: 500px;
-  height: 500px;
-}
-/* Shine */
-.images #pic1 {
-  position: relative;
-}
-.images #pic1::before {
-  position: absolute;
-  top: 0;
-  left: -75%;
-  z-index: 2;
-  display: block;
-  content: "";
-  width: 50%;
-  height: 100%;
-  background: -webkit-linear-gradient(
-    left,
-    rgba(255, 255, 255, 0) 0%,
-    rgba(255, 255, 255, 0.3) 100%
-  );
-  background: linear-gradient(
-    to right,
-    rgba(255, 255, 255, 0) 0%,
-    rgba(255, 255, 255, 0.3) 100%
-  );
-  -webkit-transform: skewX(-25deg);
-  transform: skewX(-25deg);
-}
-.images #pic1:hover::before {
-  -webkit-animation: shine 0.75s;
-  animation: shine 0.75s;
-}
-@-webkit-keyframes shine {
-  100% {
-    left: 125%;
-  }
-}
-@keyframes shine {
-  100% {
-    left: 125%;
-  }
-}
-.sitelogo {
-  padding-top: 8cm;
-}
-.to_buy,
-.contact{
-  text-align: center;
-  padding-right: 5cm;
-  text-decoration: none;
- 
-}
-.to_buy {
-  color: rgb(243, 243, 243);
-  background-color: rgba(25, 146, 84, 0.955);
-}
-.to_buy :hover {
-  background-color: azure;
-  background: azure;
-}
-.contact {
-  font-size: larger;
-}
-.social_links a{
 
-  padding-right: 5cm;
-  text-decoration: none;
-  font-size: 20px;
-  text-align: center;
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
-#aa,#ab{
-  padding-top: 1cm;
-  padding-left: 12cm;
-  display: flex;
-  flex-direction: column;
- 
+.downlogo{
+    margin-top: 10cm;
 }
-#ab{
-  padding-bottom: 5cm;
+.buy{
+    
+    float: right;
+    margin-right: 5cm;
 }
-.back{
-  background-color: gray;
+.button{
+    font-size: 38px;
+    margin-right: 5cm;
+    background-color: rgb(10, 152, 60);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    text-shadow: rgba(63, 146, 119, 0.892) 0px 3px 3px;
+    margin-bottom: 1cm;
 }
-i {
-  text-shadow: 2px 4px 6px orange;
+.contact{
+    margin-top: 0;
+}
+.sociallinks{
+   float: right;
+   margin-top: 5cm;
+   margin-right: 0;
 }
