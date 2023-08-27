@@ -96,3 +96,13 @@ ul li a :hover{
 ul li a:hover{
     color: black;
 }
+@media screen and (max-width: 320px){
+    header{
+        text-align: center;
+        background-color:rgb(68, 77, 80);
+        padding: 3px;
+        font-size: 20px;
+        color: white;
+    }
+
+}
