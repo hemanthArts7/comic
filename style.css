@@ -132,4 +132,41 @@ ul li a :hover{
     margin-bottom: 2cm;
     font-size: 10px;
 }
+.downlogo{
+    margin-top: 10cm;
+    font-size: 10px;
 }
+.buy{
+    
+  
+    margin-right: 5cm;
+}
+.button{
+    font-size: 20px;
+    margin-right: 0cm;
+    background-color: rgb(10, 152, 60);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    text-shadow: rgba(63, 146, 119, 0.892) 0px 3px 3px;
+    margin-bottom: 0cm;
+    margin-left: 2cm;
+    padding-left: 2CM;
+    align-content: right;
+}
+.contact{
+    margin-top: 2px;
+    margin-left: 5cm;
+    font-size: 10PX;
+}
+.sociallinks{
+    float: right;
+    margin-top: 1cm;
+    text-decoration: none;
+    padding-bottom: 3cm;
+    font-size: 15px;
+    margin-right: 2cm;
+
+    
+ }
+} 
