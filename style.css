@@ -73,5 +73,26 @@ ul li a :hover{
 .sociallinks{
    float: right;
    margin-top: 5cm;
-   margin-right: 0;
+   text-decoration: none;
+   padding-bottom: 3cm;
+   font-size: 23px;
+   
+}
+.sociallinks .insta a{
+   color: #d62976;
+   text-decoration: none; 
+}
+.sociallinks .whatsapp a{
+    color: #25d366;
+    text-decoration: none;
+}
+
+.sociallinks .insta a:hover{
+    color: #833AB4;
+}
+.sociallinks .whatsapp a:hover{
+    color: #075e54;
+}
+ul li a:hover{
+    color: black;
 }
